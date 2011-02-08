@@ -1,0 +1,15 @@
+= Shorty URL
+
+Shorty URL is written in the Sinatra ruby framework. More on Sinatra here: http://www.sinatrarb.com/
+
+Requirements:
+	Ruby
+	Rubygems
+	Sqlite
+
+Set up:
+	git clone git://github.com/chrisledet/shorty_url.git
+  bundle install
+  ruby -rubygems app.rb -p PORT
+
+View at: http://localhost:PORT and bang!
