@@ -1,11 +1,11 @@
 = Shorty URL
 
-Shorty URL is written in the Sinatra ruby framework. More on Sinatra here: http://www.sinatrarb.com/
+Shorty URL is written in the Sinatra ruby framework. More on Sinatra here: http://www.sinatrarb.com
 
 Requirements:
-Ruby 1.8.7+
-Rubygems
-Sqlite
+* Ruby 1.8.7+
+* Rubygems
+* Sqlite
 
 Set up:
   git clone git://github.com/chrisledet/shorty_url.git
