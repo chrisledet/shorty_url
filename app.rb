@@ -11,6 +11,11 @@ helpers do
   def link_to(title, url)
     "<a href='#{url}'>#{title}</a>"
   end
+
+  def fix_url url
+    url.scan(/http/).empty? ? "http://#{url}" : url
+  end
+
 end
 
 # database name for our app
@@ -51,7 +56,8 @@ end
 get '/:shorty' do
   items = DB[DB_NAME]
   shorty = params[:shorty]
-  shorty_id = shorty.to_i(BASE)
-  url = items.first(:id => shorty_id)
-  redirect url[:url]
+  shorty_id = shorty.to_i BASE
+  item = items.first(:id => shorty_id)
+  url = fix_url item[:url]
+  redirect url
 end
